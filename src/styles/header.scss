@@ -10,11 +10,18 @@
 
     &--is-hidden {
         background-color: transparent;
+        @media (max-width: 768px) {
+            background-color: transparent;
+        }
 
         .header {
             &__logo, &__links__item:first-child {
                 opacity: 0;
                 visibility: hidden;
+                @media (max-width: 768px) {
+                opacity: 0;
+                visibility: hidden;
+                }
             }
         }
     }
